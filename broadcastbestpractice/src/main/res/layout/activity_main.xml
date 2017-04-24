@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.broadcasttest.MainActivity">
+    tools:context="com.example.broadcastbestpractice.MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:text="Send Broadcast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/force_offline"
+       android:text="Send force offline broadcast"/>
 
 </android.support.constraint.ConstraintLayout>
