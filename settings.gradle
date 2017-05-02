@@ -1,1 +1,1 @@
-include ':ListViewTest', ':recyclerviewtest', ':uibestpractice', ':fragmenttest', ':fragmentbestpractice', ':broadcasttest', ':broadcasttest2', ':broadcastbestpractice'
+include ':ListViewTest', ':recyclerviewtest', ':uibestpractice', ':fragmenttest', ':fragmentbestpractice', ':broadcasttest', ':broadcasttest2', ':broadcastbestpractice', ':filepersistencetest', ':sharedpreferencestest'
