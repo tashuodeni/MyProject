@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/fragmenttest" />
             <option value="$PROJECT_DIR$/litepaltest" />
             <option value="$PROJECT_DIR$/recyclerviewtest" />
+            <option value="$PROJECT_DIR$/runtimepermissiontest" />
             <option value="$PROJECT_DIR$/sharedpreferencestest" />
             <option value="$PROJECT_DIR$/uibestpractice" />
           </set>
