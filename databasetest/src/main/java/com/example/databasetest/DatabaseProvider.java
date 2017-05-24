@@ -13,7 +13,7 @@ public class DatabaseProvider extends ContentProvider {
     public static final int BOOK_ITEM = 1;
     public static final int CATEGORY_DIR = 2;
     public static final int CATEGORY_ITEM = 3;
-    public static final String AUTHORITY = "com.example.databasttest.provider";
+    public static final String AUTHORITY = "com.example.databasetest.provider";
     private static UriMatcher uriMatcher;
     private MyDatabaseHelper dbHelper;
 
@@ -57,7 +57,6 @@ public class DatabaseProvider extends ContentProvider {
 
     @Override
     public String getType(Uri uri) {
-        // TODO: Implement this to handle requests for the MIME type of the data
         // at the given URI.
         switch (uriMatcher.match(uri)){
             case BOOK_DIR:
@@ -74,7 +73,6 @@ public class DatabaseProvider extends ContentProvider {
 
     @Override
     public Uri insert(Uri uri, ContentValues values) {
-        // TODO: Implement this to handle requests to insert a new row.
         //添加数据
         SQLiteDatabase db=dbHelper.getReadableDatabase();
         Uri uriReturn=null;
@@ -96,7 +94,6 @@ public class DatabaseProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        // TODO: Implement this to initialize your content provider on startup.
         dbHelper = new MyDatabaseHelper(getContext(), "BookStore.db", null, 2);
         return true;
     }
@@ -104,7 +101,6 @@ public class DatabaseProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri, String[] projection, String selection,
                         String[] selectionArgs, String sortOrder) {
-        // TODO: Implement this to handle query requests from clients.
         //查询数据
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = null;
@@ -131,7 +127,6 @@ public class DatabaseProvider extends ContentProvider {
     @Override
     public int update(Uri uri, ContentValues values, String selection,
                       String[] selectionArgs) {
-        // TODO: Implement this to handle requests to update one or more rows.
         //更新数据
         SQLiteDatabase db=dbHelper.getReadableDatabase();
         int updateRows=0;
